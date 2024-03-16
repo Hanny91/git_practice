@@ -1,3 +1,5 @@
+# Exploring NLP capabilities as part of Bootcamp Study
+
 import spacy
 nlp = spacy.load('en_core_web_sm')
 
