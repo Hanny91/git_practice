@@ -17,13 +17,13 @@ doc = nlp(gardenpath_sentences)
 for token in doc:
     print(token.text)
 
-# Named Entity Recognition
-for ent in doc.ents:
-    print(f"{ent.text:{19}} {ent.label_}")
-
 # Sentence categorisation
 for token in doc:
     print(f"{token.text:{12}} {token.pos_:{6}} {token.dep_}")
+
+# Named Entity Recognition
+for ent in doc.ents:
+    print(f"{ent.text:{19}} {ent.label_}")
 
 print(spacy.explain("PERSON"))
 print(spacy.explain("GPE"))
